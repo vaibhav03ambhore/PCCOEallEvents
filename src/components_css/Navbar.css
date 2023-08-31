@@ -1,0 +1,132 @@
+/* ===== Google Font =====*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Lato&display=swap');
+
+:root{
+  --header-height: 2.5rem;
+
+  /* Color Mode HSL(hue,saturation,lightness) */
+  --first-color:hsl(16, 65%, 5%);
+  --first-color-alt:hsl(129,44%,94%);
+  --second-color:hsl(181, 85%, 35%);
+  --title-color:hsl(0,0%,13%);
+  --text-color:hsl(0, 0%, 100%);
+  --text-color-light:hsl(60,1%,56%);
+  --body-color:hsl(0,0%,100%);
+  --container-color:hsl(0,0%,93%);
+  --border-color:hsl(129,36%,85%);
+  --boder-color-alt:hsl(113,15%,90%);
+
+  /* ===== 1rem = 16px =====*/
+  --body-font:'Lato', sans-serif;
+  --second-font:'Dosis', sans-serif;
+  --big-font-szie:3.5rem;
+  --h1-font-size:2.75rem;
+  --h2-font-size:2rem;
+  --h3-font-size:1.75rem;
+  --h4-font-size:1.375rem;
+  --large-font-size:1.125rem;
+  --normal-font-size:1.rem;
+  --small-font-size:0.875rem;
+  --smaller-font-size:0.75rem;
+  --tiny-font-size:0.6875rem;
+
+  --weight-400:400;
+  --weight-500:500;
+  --weight-600:600;
+  --weight-700:700;
+
+  --transition:cubic-bezier(0,0,0.05,1);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+   /*========== Margenes Bottom ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+p{
+  line-height: 1.5rem;
+}
+img{
+  max-width: 100%;
+}
+.container{
+  min-width: 100%;
+}
+/* =====Header & Top =====*/
+.header{
+  width: 100%;
+}
+
+.nav{
+  height: calc(var(--header-height) + 1rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__menu,
+.nav__list{
+  display: flex;
+  align-items: center;
+}
+.nav__logo-img{
+  width: 200px;
+}
+.nav__menu{
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.nav__list{
+  column-gap: 2.5rem;
+  margin-right: auto;
+}
+.nav__link{
+  color: var(--text-color);
+  font-weight: var(--weight-500);
+  transition: all 0.2 var(--transition);
+}
+.nav__menu  button{
+  width: 100px;
+	height: 35px;
+  color: var(--body-color);
+  background-color: var(--second-color);
+  border: 1.5px solid #fff;
+  border-radius: 0 80px;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .nav__menu{
+    display: none;
+  }
+}
