@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../components_css/GTop.css';
+import '../components_css/Gtop.css';
 import { FaArrowUp } from 'react-icons/fa';
 
 const GTop = () => {
