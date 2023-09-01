@@ -80,13 +80,14 @@ export const Input = styled.input`
 
 
 export const Button = styled.button`
-       border-radius: 20px;
+      border-radius: 0 20px;
        border: 1px solid #ff4b2b;
        background-color: #ff4b2b;
        color: #ffffff;
        font-size: 12px;
        font-weight: bold;
-       padding: 12px 45px;
+       padding: 12px 25px;
+       margin: 20px;
        letter-spacing: 1px;
        text-transform: uppercase;
        transition: transform 80ms ease-in;

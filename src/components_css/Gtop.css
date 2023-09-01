@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-btn {
+    font-size: .4rem;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    background-color: hsl(181, 85%, 35%);
+    border-radius: 0 50%;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+    .top-btn--icon{
+font-size: .8rem;
+        animation: gototop 1.2s linear infinite alternate-reverse ;
+    }
+
+    @keyframes gototop {
+        0% {
+            transform: translateY(-0.2rem);
+        }
+
+        100% {
+            transform: translateY(0.2rem);
+        }
+    }

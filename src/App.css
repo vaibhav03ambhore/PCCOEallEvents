@@ -5,8 +5,23 @@
 }
 body{
   /* background-image: url(./Images/Background.jpg); */
-  background-image: linear-gradient(40deg,red,#0FF0AC,#F0D50F,#0FF0AC);
+  background-image: linear-gradient(40deg,rgb(75, 82, 91),#b6bdbb);
   background-Size: cover;
   background-Repeat: no-repeat;
   min-height: 100vh;
 }
+.App {
+  text-align: center;
+}
+
+.app{
+  text-align: center;
+  padding: 1px;
+ 
+}
+
+.body-container{
+  padding: 20px;
+  text-align: center;
+}
+

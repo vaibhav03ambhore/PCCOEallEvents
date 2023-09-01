@@ -113,12 +113,12 @@ img{
   transition: all 0.2 var(--transition);
 }
 .nav__menu  button{
-  width: 100px;
+  width: 80px;
 	height: 35px;
   color: var(--body-color);
   background-color: var(--second-color);
   border: 1.5px solid #fff;
-  border-radius: 0 80px;
+  border-radius: 0 20px;
   margin-left: 1rem;
   margin-right: 0.5rem;
   position: relative;
