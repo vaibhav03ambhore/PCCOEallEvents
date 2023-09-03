@@ -7,6 +7,7 @@ import { BrowserRouter as BroweRouter, Routes, Route } from "react-router-dom"
 import LoginG from './pages/LoginG';
 import UserMenu from './pages/UserMenu';
 import GTop from './components/Gtop';
+import Bg from './components/Bg';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route exact path='/login' element={<LoginG />}></Route>
         <Route exact path='/user' element={<UserMenu />}></Route>
       </Routes>
-      <GTop/>
+      <GTop />
+      <Bg />
     </BroweRouter>
   );
 }

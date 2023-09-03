@@ -76,7 +76,7 @@ p{
 img{
   max-width: 100%;
 }
-.container{
+.Ncontainer{
   min-width: 100%;
 }
 /* =====Header & Top =====*/
@@ -108,7 +108,7 @@ img{
   margin-right: auto;
 }
 .nav__link{
-  color: var(--text-color);
+  color: black;
   font-weight: var(--weight-500);
   transition: all 0.2 var(--transition);
 }

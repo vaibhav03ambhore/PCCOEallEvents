@@ -1,28 +1,45 @@
-import React from 'react'
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "../pages_css/Contact.css"
 const Contact = () => {
+  function showAlert1() {
+    alert("Mail SuccessFully! Sended");
+}
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vn7vwrl', 'template_vi52r2p', form.current, 'wWjWvr8EMyrzQXFKZ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
       <div className="Mcontainer">
         <div className="apply">
           <h1>Contact Us</h1>
-          <form action="">
+          <form action="" ref={form} onSubmit={sendEmail}>
             <div className="form_container">
               <div className="form_control">
-                <label for="first_name">First Name</label>
-                <input id="first_name" name="first name" placeholder="enter first name...." />
+                <label htmlFor="first_name">First Name</label>
+                <input id="first_name" name="from_name" placeholder="enter first name...." />
               </div>
               <div className="form_control">
-                <label for="last_name">Last Name</label>
+                <label htmlFor="last_name">Last Name</label>
                 <input id="last_name" name="last name" placeholder="enter last name...." />
               </div>
               <div className="form_control">
-                <label for="email">Email</label>
-                <input id="email" name="first name"
+                <label htmlFor="email">Email</label>
+                <input id="email" name="from_email"
                   type="email" placeholder="enter email...." />
               </div>
               <div className="form_control">
-                <label for="job_role">Job Role</label>
+                <label htmlFor="job_role">Job Role</label>
                 <select id="job_role" name="job_role">
                   <option value="">Select Job Role</option>
                   <option value="frontend">Frontend Developer</option>
@@ -32,34 +49,34 @@ const Contact = () => {
                 </select>
               </div>
               <div className="text_area_control">
-                <label for="address">Address</label>
-                <textarea name="address" id="address" cols="100" rows="3"
+                <label htmlFor="address">Describe Your Query Here</label>
+                <textarea name="message" id="address" cols="100" rows="3"
                   placeholder="Enter Area"></textarea>
               </div>
               <div className="form_control">
-                <label for="city">City</label>
+                <label htmlFor="city">City</label>
                 <input id="city" name="city"
                   placeholder="enter city name...." />
               </div>
               <div className="form_control">
-                <label for="pincode">Pincode</label>
+                <label htmlFor="pincode">Pincode</label>
                 <input id="pincode" name="pincode"
                   type="number" placeholder="enter pincode...." />
               </div>
               <div className="form_control">
-                <label for="date">Date</label>
+                <label htmlFor="date">Date</label>
                 <input id="date" name="date"
                   type="date" value="2023-01-18" />
               </div>
               <div className="form_control">
-                <label for="upload_cv">Upload_CV</label>
+                <label htmlFor="upload_cv">Upload_CV</label>
                 <input id="upload_cv" name="upload_cv"
                   type="file" />
               </div>
 
             </div>
             <div className="button_container">
-              <button type="submit">Click Here</button>
+              <button type="submit" onClick={showAlert1}>Submit</button>
             </div>
           </form>
         </div>
