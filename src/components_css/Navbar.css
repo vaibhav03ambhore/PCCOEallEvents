@@ -126,9 +126,19 @@ img{
   position: relative;
   cursor: pointer;
 }
+.menu-btn{
+  font-size: 30px;
+  cursor: pointer;
+  margin: 5px;
+}
 
 @media (max-width: 680px) {
   .nav__menu{
+    display: none;
+  }
+}
+@media (min-width: 680px) {
+  .menu-btn{
     display: none;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import '../components_css/Navbar.css';
 import logo from '../Images/logo.png';
 import { Link } from 'react-router-dom';
+import { CgMenuGridO} from 'react-icons/cg';
 const Navbar = () => {
     return (
         <div>
@@ -32,6 +33,7 @@ const Navbar = () => {
                             <button className='login__btn'>Login</button>
                         </Link>
                     </div>
+                        <CgMenuGridO className='menu-btn'/>
                 </nav>
             </header>
         </div>
