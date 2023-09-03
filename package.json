@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-oauth/google": "^0.11.1",
     "bootstrap": "^5.3.1",
+    "emailjs": "^4.0.2",
     "emailjs-com": "^3.2.0",
     "firebase": "^10.3.1",
     "jwt-decode": "^3.1.2",
