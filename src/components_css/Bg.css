@@ -43,7 +43,7 @@
     height: 200px;
     background: linear-gradient(64deg,#f34868 23%, #f24768 23%, #9e00ec 80%);
     position: fixed;
-    bottom: -50px;
+    bottom: -5%;
     left: -5%;
     opacity: .3;
     z-index: -1;
@@ -52,10 +52,10 @@
 .shape:nth-of-type(5){
     width: 450px;
     height: 450px;
-    background: linear-gradient(64deg,#f34868 23%, #f24768 23%, #9e00ec 80%);
+    background: linear-gradient(64deg,#f34868 23%, #f24768 23%, #1882ed 80%);
     position: fixed;
-    bottom: -30%;
-    right: 40%;
+    bottom: -40%;
+    right: 20%;
     opacity: .4;
     z-index: -1;
     animation: wave 8s  ease-in-out infinite;
