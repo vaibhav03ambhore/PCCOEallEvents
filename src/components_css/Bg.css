@@ -71,6 +71,17 @@
     z-index: -1;
     animation: wave 8s  ease-in-out infinite;
 }
+.shape:nth-of-type(7){
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(64deg,#f34868 23%, #f24768 23%, #1882ed 80%);
+    position: fixed;
+    bottom: 27rem;
+    right: 20rem;
+    opacity: .4;
+    z-index: -1;
+    animation: wave 8s  ease-in-out infinite;
+}
 @keyframes wave{
     0%,100%{
         border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;

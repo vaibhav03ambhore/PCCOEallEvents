@@ -10,6 +10,7 @@ const Bg = () => {
             <span className='shape'></span>
             <span className='shape'></span>
             <span className='shape'></span>
+            <span className='shape'></span>
         </div>
     </div>
   )
