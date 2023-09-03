@@ -54,8 +54,8 @@
     height: 450px;
     background: linear-gradient(64deg,#f34868 23%, #f24768 23%, #1882ed 80%);
     position: fixed;
-    bottom: -40%;
-    right: 20%;
+    bottom: -9rem;
+    right: 20rem;
     opacity: .4;
     z-index: -1;
     animation: wave 8s  ease-in-out infinite;
@@ -79,3 +79,9 @@
         border-radius: 25% 75% 50% 50% / 25% 50% 45% 80%;
     }
 }
+
+@media (max-width: 680px) {
+    .nav__menu{
+      display: none;
+    }
+  }

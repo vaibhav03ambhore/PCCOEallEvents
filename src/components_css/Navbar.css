@@ -82,6 +82,8 @@ img{
 /* =====Header & Top =====*/
 .header{
   width: 100%;
+  border:3px groove rgb(95, 89, 89);
+  border-radius: 0 20px;
 }
 
 .nav{
