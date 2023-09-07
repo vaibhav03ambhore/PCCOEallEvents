@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../pages_css/Event_Page_CSS/EventCard.css';
-import '../../../public/images/event-image.jpg';
+import Imag from '../../../public/images/event-image.jpg';
 
 const EventCard = ({ event }) => (
   <div className="event-card">
 
     <div className="event-card-image">
-        <img src={ '../../../public/images/event-image.jpg'} alt="Event" />
+        <img src={Imag} alt="Event" />
     </div>
 
     <div className="event-card-content">
