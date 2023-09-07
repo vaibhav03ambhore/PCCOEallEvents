@@ -1,0 +1,56 @@
+/* components/EventCard.css */
+
+.event-card{
+  min-width: 100px;
+  height: auto;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 5px 55px;
+  background-color: #b9eb94c4;
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ;
+}
+.register-block{
+  background:transparent linear-gradient(106deg, #146371 0%, #8cd4d7 100%) 0% 0% no-repeat padding-box;
+  padding : 12px ;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  border-bottom-left-radius: 20px ;
+}
+
+.register-text a{
+  font-size: 20px;
+  color: rgb(248, 246, 246);
+  
+  text-align: center;
+  text-decoration: none;
+}
+.register-text a:hover{
+  color: rgb(15, 232, 243);
+}
+.event-card-image img{
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 20px;
+}
+
+.event-card-content{
+  width: 100%;
+  
+}
+
+.event-card:hover{
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    margin: 15px 25px;
+  }
+}

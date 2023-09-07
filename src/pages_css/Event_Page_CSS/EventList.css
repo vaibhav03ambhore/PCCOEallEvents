@@ -1,0 +1,14 @@
+/* EventList.css file  */
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 25px;
+    padding: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .event-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
