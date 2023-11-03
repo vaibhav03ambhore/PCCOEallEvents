@@ -6,6 +6,7 @@
 body{
   /* background-image: url(./Images/Background.jpg); */
   /* background-image: linear-gradient(40deg,#1cb88b,rgb(153, 20, 194)); */
+  background-color: rgb(197, 197, 197);
   background-Size: cover;
   background-Repeat: no-repeat;
   min-height: 100vh;

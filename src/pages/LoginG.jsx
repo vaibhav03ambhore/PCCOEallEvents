@@ -33,7 +33,7 @@ const LoginG = () => {
             .then(result => {
                 console.log(result)
                 if (result.data === "Success") {
-                    navigate('/')
+                    navigate('/event')
                 }
                 else {
                     showError()
