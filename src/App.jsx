@@ -8,6 +8,8 @@ import LoginG from './pages/LoginG';
 import UserMenu from './pages/UserMenu';
 import GTop from './components/Gtop';
 import Bg from './components/Bg';
+import EventForm from './pages/EventForm';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route exact path='/contact' element={<Contact />}></Route>
         <Route exact path='/login' element={<LoginG />}></Route>
         <Route exact path='/user' element={<UserMenu />}></Route>
+        <Route exact path='/EventForm' element={<EventForm />}></Route>
       </Routes>
       <GTop />
       <Bg />
